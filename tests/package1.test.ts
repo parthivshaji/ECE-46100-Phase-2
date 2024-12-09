@@ -122,6 +122,9 @@ describe('POST /package', () => {
 
   it('should upload a new package with a valid URL', async () => {
     const validURL = 'https://github.com/jashkenas/underscore';
+    const response1 = await request(app)
+      .delete('/reset')
+      .expect(200);
     const response = await request(app)
       .post('/package')
       .send({
