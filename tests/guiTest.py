@@ -10,7 +10,7 @@ class TestAPI(unittest.TestCase):
     def setUp(self):
         """Set up the Selenium WebDriver."""
         self.driver = webdriver.Chrome()  # Use appropriate WebDriver (e.g., ChromeDriver)
-        self.driver.get("http://localhost:3001")  # Replace with the actual URL of your app
+        self.driver.get("http://18.117.89.241:3001")  # Replace with the actual URL of your app
         self.driver.maximize_window()
     
     def test_get_package_by_id(self):
